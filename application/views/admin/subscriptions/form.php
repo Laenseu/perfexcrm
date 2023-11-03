@@ -8,7 +8,7 @@
 <div class="row">
     <div class="col-md-12">
         <div class="tw-bg-neutral-50 tw-rounded-md tw-p-6 tw-border tw-border-solid tw-border-neutral-200 tw-mb-4">
-            <div class="form-group select-placeholder">SS
+            <div class="form-group select-placeholder">
                 <label for="stripe_plan_id"><?php echo _l('billing_plan'); ?></label>
                 <select id="stripe_plan_id" name="stripe_plan_id" class="selectpicker" data-live-search="true"
                     data-width="100%" data-none-selected-text="<?php echo _l('stripe_subscription_select_plan'); ?>">
