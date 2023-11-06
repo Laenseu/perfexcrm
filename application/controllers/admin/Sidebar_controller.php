@@ -22,10 +22,17 @@ class Sidebar_controller extends CI_Controller {
         $data['total_billable_hours'] = $this->sidebar_model->get_total_billable_hours($staff_id);
         $data['total_hours'] = $this->sidebar_model->get_total_hours($staff_id);
         $data['total_Notbillable_hours'] = $this->sidebar_model->get_total_Notbillable_hours($staff_id);
-        $data['sidebar_contentZ'] = $this->load->view('admin/sidebar/sidebar_content', '', TRUE);
-        $this->load->view('main_view', $data);
+        $data['sidebar_content'] = $this->load->view('admin/sidebar/sidebar_content', '', TRUE);
 
+
+        $project_id = 2; // Replace with the actual project ID
+        $project_name = $this->sidebar_model->get_project_name($project_id);
+
+        $data['project_name'] = $project_name;
+        $this->load->view('main_view', $data);
         
+
+
 
 
 

@@ -12,7 +12,19 @@ class Sidebar_model extends App_Model {
     
 
     }
+  
 
+    public function get_project_name($project_id) {
+        $this->db->select('name');
+        $this->db->where('id', $project_id);
+        $query = $this->db->get('tblprojects');
+
+        if ($query->num_rows() > 0) {
+            return $query->row()->name;
+        } else {
+            return null;
+        }
+    }
     public function get_total_Notbillable_hours($staff_id) {
         $this->db->select_sum('(end_time - start_time) / 3600', 'total_hours');
         $this->db->from('tbltasks');

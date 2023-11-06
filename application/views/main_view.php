@@ -26,8 +26,8 @@
     <h1>Billable Hours: <?php echo $total_billable_hours; ?></h1>
     <h1>NotBillable Hours <?php echo $total_Notbillable_hours; ?></h1>
     <h1>Total Hours Worked: <?php echo $total_billable_hours + $total_Notbillable_hours ?></h1>
-
-
+    <h1>ProjectName: <?php echo $project_name; ?></h1>
+    
     </div>
 </body>
 </html>
