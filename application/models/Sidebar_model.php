@@ -12,7 +12,15 @@ class Sidebar_model extends App_Model {
     
 
     }
-  
+    public function get_data() {
+        $query = $this->db->get('tblprojects');
+        return $query->result();
+    }
+    public function get_user_data() {
+        $query = $this->db->get('tblstaff');
+        return $query->result();
+    }
+
 
     public function get_project_name($project_id) {
         $this->db->select('name');

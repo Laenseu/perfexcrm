@@ -29,12 +29,11 @@ class Sidebar_controller extends CI_Controller {
         $project_name = $this->sidebar_model->get_project_name($project_id);
 
         $data['project_name'] = $project_name;
-        $this->load->view('main_view', $data);
+        $data['results'] = $this->sidebar_model->get_data();
+        $data['user_result'] = $this->sidebar_model->get_user_data();
+        $this->load->view('admin/sidebar/sidebar_content', $data);
         
 
-
-
-
-
     }
+  
 }

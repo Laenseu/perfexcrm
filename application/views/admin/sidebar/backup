@@ -76,46 +76,12 @@
             transition: width 2s ease-in-out;
         }
 
-     
-
 </style>
 <body>
 
 
-<table class="test">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <!-- Add more columns as needed -->
-        </tr>
-    </thead>
-    <tbody>
-        <?php foreach ($results as $row) : ?>
-            <tr>
-           
-                <td><?php echo $row->name; ?></td>
-                <!-- Add more columns as needed -->
-            </tr>
-        <?php endforeach; ?>
-    </tbody>
-</table>
-<table class="test">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <!-- Add more columns as needed -->
-        </tr>
-    </thead>
-    <tbody>
-        <?php foreach ($user_result as $row) : ?>
-            <tr>
-                
-                <td><?php echo $row->firstname;  ?></td>
-                <!-- Add more columns as needed -->
-            </tr>
-        <?php endforeach; ?>
-    </tbody>
-</table>
+
+
 <?php
 $year = date('Y');
 $currentWeek = date('W');
@@ -131,107 +97,125 @@ $currentWeek = date('W');
 <input type="text" id="weekInput" placeholder="Enter week number">
 <button id="searchButton">Search</button>
 
-
-
-
-
-
 <table  id="table1" class="">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <?php for ($week = 1; $week <= $currentWeek; $week++): ?>
-                
-                <th>Week <?php echo $week; ?></th>
-            <?php endfor; ?>
-        </tr>
-    </thead>
-    <tbody>
-        <?php foreach ($results as $row) : ?>
-            <tr>
-            <td><?php echo $row->name; ?></td>
-                <?php for ($week = 1; $week <= $currentWeek; $week++): ?>
-                    <td><?php echo rand(0, 100); ?>%</td> <!-- Random progress percentage for demonstration -->
-                <?php endfor; ?>
-            </tr>
-    
-        <?php endforeach; ?>
-    </tbody>  
+    <tr>
+        <th>Name</th>
+        <?php for ($week = 1; $week <= $currentWeek; $week++): ?>
+            
+            <th>Week <?php echo $week; ?></th>
+        <?php endfor; ?>
+    </tr>
+    <tr>
+        <td>SIBOL</td>
+        <?php for ($week = 1; $week <= $currentWeek; $week++): ?>
+            <td><?php echo rand(0, 100); ?>%</td> <!-- Random progress percentage for demonstration -->
+        <?php endfor; ?>
+    </tr>
+    <tr>
+        <td>HUSAY</td>
+        <?php for ($week = 1; $week <= $currentWeek; $week++): ?>
+            <td><?php echo rand(0, 100); ?>%</td> <!-- Random progress percentage for demonstration -->
+        <?php endfor; ?>
+    </tr>
+    <tr>
+        <td>HR</td>
+        <?php for ($week = 1; $week <= $currentWeek; $week++): ?>
+            <td><?php echo rand(0, 100); ?>%</td> <!-- Random progress percentage for demonstration -->
+        <?php endfor; ?>
+    </tr>
 </table>
 
 
 <table id="table2" class="hidden">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <?php for ($week = 1; $week <= $currentWeek; $week++): ?>
-                    
-                    <th>Week <?php echo $week; ?></th>
-                <?php endfor; ?>
-            </tr>
-        </thead>
-        <tbody>
-            <?php foreach ($user_result as $row) : ?>
-                <tr>
-                    <td><?php echo $row->firstname; ?></td>
-                    <?php for ($week = 1; $week <= $currentWeek; $week++): ?>
-                        <td><?php echo rand(0, 100); ?>%</td> <!-- Random progress percentage for demonstration -->
-                    <?php endfor; ?>
-                 </tr>
-            <?php endforeach; ?>
-        </tbody>  
+<tr>
+        <th>Name</th>
+        <?php for ($week = 1; $week <= $currentWeek; $week++): ?>
+            <th>Week <?php echo $week; ?></th>
+        <?php endfor; ?>
+    </tr>
+    <tr>
+        <td>Ryan</td>
+        <?php for ($week = 1; $week <= $currentWeek; $week++): ?>
+            <td><?php echo rand(0, 100); ?>%</td> <!-- Random progress percentage for demonstration -->
+        <?php endfor; ?>
+    </tr>
+    <tr>
+        <td>Aaron</td>
+        <?php for ($week = 1; $week <= $currentWeek; $week++): ?>
+            <td><?php echo rand(0, 100); ?>%</td> <!-- Random progress percentage for demonstration -->
+        <?php endfor; ?>
+    </tr>
   
 </table>
 
 <table id="table3" class="hidden">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <?php for ($week = 1; $week <= $currentWeek; $week++): ?>
-                    
-                    <th>Week <?php echo $week; ?></th>
-                <?php endfor; ?>
-            </tr>
-        </thead>
-        <tbody>
-            <?php foreach ($user_result as $row) : ?>
-                <tr>
-                    <td><?php echo $row->firstname; ?></td>
-                    <?php for ($week = 1; $week <= $currentWeek; $week++): ?>
-                        <td><?php echo rand(0, 100); ?>%</td> <!-- Random progress percentage for demonstration -->
-                    <?php endfor; ?>
-                 </tr>
-            <?php endforeach; ?>
-        </tbody>  
+<tr>
+        <th>Name</th>
+        <?php for ($week = 1; $week <= $currentWeek; $week++): ?>
+            <th>Week <?php echo $week; ?></th>
+        <?php endfor; ?>
+    </tr>
+    <tr>
+        <td>Ryan</td>
+        <?php for ($week = 1; $week <= $currentWeek; $week++): ?>
+            <td><?php echo rand(0, 100); ?>%</td> <!-- Random progress percentage for demonstration -->
+        <?php endfor; ?>
+    </tr>
+    <tr>
+        <td>Tim</td>
+        <?php for ($week = 1; $week <= $currentWeek; $week++): ?>
+            <td><?php echo rand(0, 100); ?>%</td> <!-- Random progress percentage for demonstration -->
+        <?php endfor; ?>
+    </tr>
+    <tr>
+        <td>MJ</td>
+        <?php for ($week = 1; $week <= $currentWeek; $week++): ?>
+            <td><?php echo rand(0, 100); ?>%</td> <!-- Random progress percentage for demonstration -->
+        <?php endfor; ?>
+    </tr>
+    <tr>
+        <td>Leo</td>
+        <?php for ($week = 1; $week <= $currentWeek; $week++): ?>
+            <td><?php echo rand(0, 100); ?>%</td> <!-- Random progress percentage for demonstration -->
+        <?php endfor; ?>
+    </tr>
+
   
 </table>
-
 
 <table id="table4" class="hidden">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <?php for ($week = 1; $week <= $currentWeek; $week++): ?>
-                    
-                    <th>Week <?php echo $week; ?></th>
-                <?php endfor; ?>
-            </tr>
-        </thead>
-        <tbody>
-            <?php foreach ($user_result as $row) : ?>
-                <tr>
-                    <td><?php echo $row->firstname; ?></td>
-                    <?php for ($week = 1; $week <= $currentWeek; $week++): ?>
-                        <td><?php echo rand(0, 100); ?>%</td> <!-- Random progress percentage for demonstration -->
-                    <?php endfor; ?>
-                 </tr>
-            <?php endforeach; ?>
-        </tbody>  
-  
+<tr>
+        <th>Name</th>
+        <?php for ($week = 1; $week <= $currentWeek; $week++): ?>
+            <th>Week <?php echo $week; ?></th>
+        <?php endfor; ?>
+    </tr>
+    <tr>
+        <td>Leo</td>
+        <?php for ($week = 1; $week <= $currentWeek; $week++): ?>
+            <td><?php echo rand(0, 100); ?>%</td> <!-- Random progress percentage for demonstration -->
+        <?php endfor; ?>
+    </tr>
+    <tr>
+        <td>MJ</td>
+        <?php for ($week = 1; $week <= $currentWeek; $week++): ?>
+            <td><?php echo rand(0, 100); ?>%</td> <!-- Random progress percentage for demonstration -->
+        <?php endfor; ?>
+    </tr>
+    <tr>
+        <td>Tim</td>
+        <?php for ($week = 1; $week <= $currentWeek; $week++): ?>
+            <td><?php echo rand(0, 100); ?>%</td> <!-- Random progress percentage for demonstration -->
+        <?php endfor; ?>
+    </tr>
 </table>
 
-
-<div class="content">
+<!--for main_view-->
+<div class="sidebar">
+        <?php echo $sidebar_content; ?>
+    </div>
+  
+    <div class="content">
     <h1>Available Hours: <?php echo $total_hours; ?></h1>
     <h1>Billable Hours: <?php echo $total_billable_hours; ?></h1>
     <h1>NotBillable Hours <?php echo $total_Notbillable_hours; ?></h1>
@@ -240,12 +224,16 @@ $currentWeek = date('W');
     
     </div>
 
-    <div id="myModal" class="modal">
+<div id="myModal" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
         <div id="modalContent"></div>
     </div>
 </div>
+
+
+
+<script src="script.js"></script>
 <script>
     document.getElementById('tableSelector').addEventListener('change', function() {
     var selectedTable = this.value;
