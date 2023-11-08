@@ -58,7 +58,7 @@ class Tasks_model extends App_Model
                 'order'          => 3,
                 'filter_default' => true,
             ],
-            [c
+            [
                 'id'             => static::STATUS_AWAITING_FEEDBACK,
                 'color'          => '#84cc16',
                 'name'           => _l('task_status_2'),
