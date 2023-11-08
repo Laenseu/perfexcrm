@@ -22,14 +22,16 @@
                   $total_projects_in_progress   = total_rows(db_prefix() . 'projects', $where);
                   $time_format = seconds_to_time_format($logged_time['last_week']);
                   list($hours, $minutes, $seconds) = explode(':', $time_format);
-                  $Billable_Hours = $hours + ($minutes / 60);
-                  $percent_in_progress_projects = ($Billable_Hours/$total_hours ) * 100; //if statement  
+                //   $Billable_Hours = $hours + ($minutes / 60);
+                  $percent_in_progress_projects = ($total_billable_hours/$total_hours ) * 100; //if statement  
                 //   Available Hours=Total Working Hours−Non-Working Hours
                 // IF THE THE USER LOG IN 8AM = 8HOURS , IF THE USER LOG IN 11AM AND 12PM =  AUTOMATICALLY 4HOURS
                   $rounded_percent = round($percent_in_progress_projects, 2);
                   
                   echo $rounded_percent . '%';
-                  
+                  echo $Billable_Hours;
+                  echo $total_hours;
+                  echo $total_billable_hours;
              
 
                   ?>

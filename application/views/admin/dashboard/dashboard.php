@@ -11,33 +11,7 @@
         </svg>
     </div>
     <div class="content">
-          <?php 
-          $time_format = seconds_to_time_format($logged_time['last_week']);
-          list($hours, $minutes, $seconds) = explode(':', $time_format);
-          $Billable_Hours = $hours + ($minutes / 60);
-          $percent_in_progress_projects = ($Billable_Hours/$total_hours ) * 100; //if statement  
-        //   Available Hours=Total Working Hours−Non-Working Hours
-        // IF THE THE USER LOG IN 8AM = 8HOURS , IF THE USER LOG IN 11AM AND 12PM =  AUTOMATICALLY 4HOURS
-          $rounded_percent = round($percent_in_progress_projects, 2);
-          
-          echo $rounded_percent . '%';
-          echo $Billable_Hours;
-
-//           $today = new DateTime();
-// $today->setISODate($today->format('o'), $today->format('W'));
-
-// $lastMonday = clone $today;
-// $lastMonday->modify('-7 days');
-
-// $lastFriday = clone $lastMonday;
-// $lastFriday->modify('next Friday');
-
-// echo 'Start Date (Monday): ' . $lastMonday->format('Y-m-d') . '<br>';
-// echo 'End Date (Friday): ' . $lastFriday->format('Y-m-d');
-
-
-          ?>    
-
+  
           
         <div class="row">
             <?php $this->load->view('admin/includes/alerts'); ?>
